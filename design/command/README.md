@@ -10,3 +10,4 @@
 9. run_all [list_of_command] run (run [list_of_command] on thread or parallel)
 10. plug remove [plugin_name] [plugin_path] (remove plugin from [plugin_path])
 11. add pluging [plugin_name] (add plugin from official registry)
+12. info [info_name] (print informations about [info_name])
