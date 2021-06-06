@@ -1,1 +1,12 @@
-# nvn
+# nvn command
+1. init (initialiaze new workspace)
+2. run [command] (run command from [command] args)
+3. watch [path] [command] (run command from [command] args when [path] change)
+4. git [options see options.md] (run automated git workflow from options)
+5. fetch [url] [dir] (install from [url] to [dir])
+6. plug add [plugin_name] [plugin_path] (add plugin from [plugin_path])
+7. [plugin_name] [command] (send [command] for plugin to run that)
+8. uninit (delete nvn file)
+9. run_all [list_of_command] run (run [list_of_command] on thread or parallel)
+10. plug remove [plugin_name] [plugin_path] (remove plugin from [plugin_path])
+11. add pluging [plugin_name] (add plugin from official registry)
