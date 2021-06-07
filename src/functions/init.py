@@ -13,7 +13,7 @@ def create_folder(foldername):
 
 def create_nvn_config():
 	f = open("nvn.json", "w")
-	f.write(f'{"name": {projectname}}')
+	f.write(f'\{"name": {projectname}\}')
 	f.close()
 
 def create_nvn_files():
