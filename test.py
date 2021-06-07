@@ -16,5 +16,5 @@ def getFilename_fromCd(cd):
 
 url = 'http://google.com/favicon.ico'
 r = requests.get(url, allow_redirects=True)
-filename = r.headers.get('content-disposition')
+print(r.headers.get('content-disposition'))
 open(filename, 'wb').write(r.content)
