@@ -26,7 +26,7 @@ def create_nvn_files():
 		f.close()
 
 def create_nvn_project():
-	create_folder(f"{projectname}")
+	create_folder(f"{projectname}/.nvnfile")
 	create_nvn_config()
 	create_nvn_files()
 
