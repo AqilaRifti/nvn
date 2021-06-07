@@ -1,4 +1,5 @@
 import os, sys, pathlib
+import out
 
 foldername = input("Project Name: ")
 try:
