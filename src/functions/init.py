@@ -15,8 +15,8 @@ def create_folder(foldername):
 	except FileExistsError:
 		out.error("There is already folder with that name!")
 
-def create_nvn_file():
-	nvn_json = open(f"{foldername}/nvn.json", "w")
+def create_nvn_file(filename):
+	file = open(f"{foldername}/{filename}.json", "w")
 
 #nvn_config = open(f"{foldername}/.nvnfile/config.nvn.json", "w").write('{\n\t"name": "config"\n}')
 #nvn_plugin = open(f"{foldername}/.nvnfile/plugins.nvn.json", "w").write('{\n\t"name": "plugins"\n}')
