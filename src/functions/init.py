@@ -1,4 +1,4 @@
-import os, sys, pathlib
+import pathlib
 import out
 
 projectname = input("Project Name: ")
