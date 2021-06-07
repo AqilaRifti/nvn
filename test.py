@@ -14,7 +14,7 @@ def getFilename_fromCd(cd):
 	return fname[0]
 
 
-url = 'http://google.com/'
+url = 'https://i.ytimg.com/an_webp/79Q4yZuFDyk/mqdefault_6s.webp?du=3000&sqp=CMqQ9oUG&rs=AOn4CLDEsSStiGTTIJzzIERUgmJBlNUtsw'
 r = requests.get(url, allow_redirects=True)
-open("hello.txt", 'wb').write(r.content)
+open("hello.webp", 'wb').write(r.content)
 print(r.content)
