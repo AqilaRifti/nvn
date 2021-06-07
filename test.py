@@ -16,5 +16,5 @@ def getFilename_fromCd(cd):
 
 url = 'https://i.ytimg.com/an_webp/79Q4yZuFDyk/mqdefault_6s.webp?du=3000&sqp=CMqQ9oUG&rs=AOn4CLDEsSStiGTTIJzzIERUgmJBlNUtsw'
 r = requests.get(url, allow_redirects=True)
-open("hello.webp", 'wb').write(r.content)
+open("hello.png", 'wb').write(r.content)
 print(r.content)
