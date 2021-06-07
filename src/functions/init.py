@@ -10,6 +10,7 @@ def create_folder(foldername):
 		p = pathlib.Path(foldername).mkdir(parents=True)
 	except FileExistsError:
 		out.error("There is already folder with that name!")
+		quit()
 
 def create_nvn_config():
 	f = open("nvn.json", "w")
