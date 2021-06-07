@@ -5,13 +5,6 @@ projectname = input("Project Name: ")
 nvn_files = ["config", "plugins", "cache", "map", "script"]
 nvn_folder = f"{projectname}/.nvnfile/"
 
-def create_folder(foldername):
-	try:
-		folder = pathlib.Path(foldername).mkdir(parents=True)
-	except FileExistsError:
-		out.error("There is already folder with that name!")
-		quit()
-
 def create_nvn_config():
 	f = open(f"{projectname}/nvn.json", "w")
 	nvn_config_content = '{\n\t"name": ' + '"' + projectname + '"' + '\n}'
