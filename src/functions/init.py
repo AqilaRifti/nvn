@@ -7,8 +7,8 @@ p = pathlib.Path(foldername + "/" + ".nvnfile").mkdir(parents=True, exist_ok=Tru
 
 nvn_json = open(f"{foldername}/nvn.json", "w")
 nvn_config = open(f"{foldername}/.nvnfile/config.nvn.json", "w").write('{\n"name": "config"\n}')
-nvn_plugin = open(f"{foldername}/.nvnfile/plugins.nvn.json", "w").write('{\n"name": "plugins"}\n')
-nvn_cache = open(f"{foldername}/.nvnfile/cache.nvn.json", "w").write('{\n"name": "cache"}\n')
+nvn_plugin = open(f"{foldername}/.nvnfile/plugins.nvn.json", "w").write('{\n"name": "plugins"\n}')
+nvn_cache = open(f"{foldername}/.nvnfile/cache.nvn.json", "w").write('{\n"name": "cache"\n}')
 
 nvn_json.write('')
 nvn_json.close()
