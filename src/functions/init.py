@@ -18,12 +18,14 @@ def create_folder(foldername):
 def create_nvn_file(filename, config=None):
 	nvn_files = ["config", "plugins", "cache"]
 	nvn_folder = f"{foldername}/.nvnfile/"
+	nvn_extension = ".nvn.json"
 	if config == None:
 		file = open(f"{foldername}/{filename}.json", "w")
 	if config == "nvn_files":
 		for i in range(len(nvn_files)):
-			f = open(f"{foldername}/.nvnfile/{nvn_files[i]}.nvn.json", "w")
-			f.write('{\n\t"name": "{nvn_files[i]}"\n}')
+			nvn_files_content = '{\n\t"name": "{nvn_files[i]}"\n}'
+			f = open(f"{nvn_folder}{nvn_files[i]}{nvn_extension}", "w")
+			f.write(nvn_files_content)
 
 #nvn_config = open(f"{foldername}/.nvnfile/config.nvn.json", "w").write('{\n\t"name": "config"\n}')
 #nvn_plugin = open(f"{foldername}/.nvnfile/plugins.nvn.json", "w").write('{\n\t"name": "plugins"\n}')
