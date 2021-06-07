@@ -17,7 +17,7 @@ def create_folder(foldername):
 
 def create_nvn_file(filename, config=None):
 	nvn = open(f"{foldername}/{filename}", "w")
-	nvn_files = ["config", "plugins", "cache"]
+	nvn_files = ["config", "plugins", "cache", "map", "script"]
 	nvn_folder = f"{foldername}/.nvnfile/"
 	nvn_extension = ".nvn.json"
 	if config == "nvn_files":
