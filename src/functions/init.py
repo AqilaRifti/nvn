@@ -13,9 +13,9 @@ def create_folder(foldername):
 		quit()
 
 def create_nvn_config():
-	f = open("nvn.json", "w")
+	f = open(f"{projectname}/nvn.json", "w")
 	nvn_config_content = '{\n\t"name": ' + '"' + projectname + '"' + '\n}'
-	f.write('{"name": ' + projectname + '\n}')
+	f.write(nvn_config_content)
 	f.close()
 
 def create_nvn_files():
