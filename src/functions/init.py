@@ -1,8 +1,11 @@
 import os, sys, pathlib
 
 foldername = input("Project Name: ")
+try:
+	p = pathlib.Path(foldername).mkdir(parents=True)
+except FileExistsError:
+	print("There is already folder with that name!")
 
-p = pathlib.Path(foldername).mkdir(parents=True)
 p = pathlib.Path(foldername + "/" + ".nvnfile").mkdir(parents=True, exist_ok=True)
 
 def create_folder(foldername):
