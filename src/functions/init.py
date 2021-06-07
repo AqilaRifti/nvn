@@ -4,6 +4,7 @@ import out
 foldername = input("Project Name: ")
 nvn_files = ["config", "plugins", "cache", "map", "script"]
 nvn_folder = f"{foldername}/.nvnfile/"
+
 try:
 	p = pathlib.Path(foldername).mkdir(parents=True)
 except FileExistsError:
