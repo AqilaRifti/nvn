@@ -25,5 +25,6 @@ def create_nvn_file(filename, config=None):
 			nvn_files_content = '{\n\t"name": "{nvn_files[i]}"\n}'
 			f = open(f"{nvn_folder}{nvn_files[i]}{nvn_extension}", "w")
 			f.write(nvn_files_content)
+			f.close()
 
 create_nvn_file("nvn.json", config="nvn_files")
