@@ -1,5 +1,8 @@
 {
 	"name": "nvn",
 	"version": 1.0,
-	"command": {}
+	"command": {
+		"test": "sh script/test.sh",
+		"dev": "python3.7 ../eternatus/__main__.py watch ./ 'clear && python3.7 src/__init__.py plug react node_modules/react/nvn.py'"
+	}
 }

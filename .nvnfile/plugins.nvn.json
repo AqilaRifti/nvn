@@ -1,0 +1,6 @@
+{
+	"name": "plugins",
+	"plugins": {
+		"pynvn": "./plugins/pynvn.nvn.json"
+	}
+}
