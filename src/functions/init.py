@@ -27,4 +27,4 @@ def create_nvn_file():
 		f.write(nvn_files_content)
 		f.close()
 
-create_nvn_file("nvn.json", config="nvn_files")
+create_nvn_file()
