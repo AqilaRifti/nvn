@@ -3,7 +3,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from utils.file import *
 
 projectname = input("Project Name: ")
-nvn_files = ["config", "plugins", "cache", "map", "script"]
+nvn_files = ["config", "plugins", "cache", "map", "data"]
 nvn_folder = f"{projectname}/.nvnfile/"
 
 def create_nvn_config():
