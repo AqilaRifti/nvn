@@ -1,5 +1,4 @@
-import pathlib
-import out
+from utils.file import *
 
 projectname = input("Project Name: ")
 nvn_files = ["config", "plugins", "cache", "map", "script"]
