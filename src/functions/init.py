@@ -7,7 +7,7 @@ nvn_folder = f"{projectname}/.nvnfile/"
 
 def create_folder(foldername):
 	try:
-		p = pathlib.Path(foldername).mkdir(parents=True)
+		folder = pathlib.Path(foldername).mkdir(parents=True)
 	except FileExistsError:
 		out.error("There is already folder with that name!")
 		quit()
