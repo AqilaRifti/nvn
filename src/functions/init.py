@@ -5,7 +5,7 @@ foldername = input("Project Name: ")
 try:
 	p = pathlib.Path(foldername).mkdir(parents=True)
 except FileExistsError:
-	out.error()("There is already folder with that name!")
+	out.error("There is already folder with that name!")
 
 p = pathlib.Path(foldername + "/" + ".nvnfile").mkdir(parents=True, exist_ok=True)
 
