@@ -22,7 +22,7 @@ def create_nvn_file(filename, config=None):
 	nvn_extension = ".nvn.json"
 	if config == "nvn_files":
 		for i in range(len(nvn_files)):
-			nvn_files_content = '{\n\t"name":' + '"' + nvn_files[i] + '"' + '\n}'
+			nvn_files_content = '{\n\t"name": ' + '"' + nvn_files[i] + '"' + '\n}'
 			f = open(f"{nvn_folder}{nvn_files[i]}{nvn_extension}", "w")
 			f.write(nvn_files_content)
 			f.close()
