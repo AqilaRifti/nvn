@@ -1,9 +1,9 @@
 import os, sys, pathlib
 import out
 
-foldername = input("Project Name: ")
+projectname = input("Project Name: ")
 nvn_files = ["config", "plugins", "cache", "map", "script"]
-nvn_folder = f"{foldername}/.nvnfile/"
+nvn_folder = f"{projectname}/.nvnfile/"
 
 def create_folder(foldername):
 	try:
@@ -13,7 +13,7 @@ def create_folder(foldername):
 
 def create_nvn_config():
 	f = open("nvn.json", "w")
-	f.write("")
+	f.write(f'{"name": {projectname}}')
 	f.close()
 
 def create_nvn_files():
@@ -23,5 +23,3 @@ def create_nvn_files():
 		f = open(f"{nvn_folder}{nvn_files[i]}{nvn_extension}", "w")
 		f.write(nvn_files_content)
 		f.close()
-
-create_nvn_file()
