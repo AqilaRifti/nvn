@@ -16,10 +16,12 @@ def create_folder(foldername):
 		out.error("There is already folder with that name!")
 
 def create_nvn_file(filename, config=None):
+	nvn_files = ["config", "plugins", "cache"]
 	if config == None:
 		file = open(f"{foldername}/{filename}.json", "w")
 	if config != None:
 		if config == "nvn_files":
+			for i in range(): ...
 			file = open(f"{foldername}/.nvnfile/config.nvn.json", "w").write('{\n\t"name": "config"\n}')
 
 #nvn_config = open(f"{foldername}/.nvnfile/config.nvn.json", "w").write('{\n\t"name": "config"\n}')
