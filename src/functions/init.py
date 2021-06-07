@@ -16,23 +16,14 @@ def create_folder(foldername):
 		out.error("There is already folder with that name!")
 
 def create_nvn_file(filename, config=None):
+	nvn = open(f"{foldername}/{filename}", "w")
 	nvn_files = ["config", "plugins", "cache"]
 	nvn_folder = f"{foldername}/.nvnfile/"
 	nvn_extension = ".nvn.json"
-	if config == None:
-		file = open(f"{foldername}/{filename}.json", "w")
 	if config == "nvn_files":
 		for i in range(len(nvn_files)):
 			nvn_files_content = '{\n\t"name": "{nvn_files[i]}"\n}'
 			f = open(f"{nvn_folder}{nvn_files[i]}{nvn_extension}", "w")
 			f.write(nvn_files_content)
 
-#nvn_config = open(f"{foldername}/.nvnfile/config.nvn.json", "w").write('{\n\t"name": "config"\n}')
-#nvn_plugin = open(f"{foldername}/.nvnfile/plugins.nvn.json", "w").write('{\n\t"name": "plugins"\n}')
-#nvn_cache = open(f"{foldername}/.nvnfile/cache.nvn.json", "w").write('{\n\t"name": "cache"\n}')
-#
-#
-#nvn_json = open(f"{foldername}/nvn.json", "w")
-#nvn_config = open(f"{foldername}/.nvnfile/config.nvn.json", "w").write('{\n\t"name": "config"\n}')
-#nvn_plugin = open(f"{foldername}/.nvnfile/plugins.nvn.json", "w").write('{\n\t"name": "plugins"\n}')
-#nvn_cache = open(f"{foldername}/.nvnfile/cache.nvn.json", "w").write('{\n\t"name": "cache"\n}')
+create_nvn_file("nvn.json")
