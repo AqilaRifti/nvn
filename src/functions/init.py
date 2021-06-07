@@ -1,4 +1,4 @@
-from functions.utils.file import *
+from utils.file import *
 
 projectname = input("Project Name: ")
 nvn_files = ["config", "plugins", "cache", "map", "script"]
