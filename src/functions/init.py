@@ -23,3 +23,8 @@ def create_nvn_files():
 		f = open(f"{nvn_folder}{nvn_files[i]}{nvn_extension}", "w")
 		f.write(nvn_files_content)
 		f.close()
+
+def create_nvn_project():
+	create_folder(f"{projectname}")
+	create_nvn_config()
+	create_nvn_files()
