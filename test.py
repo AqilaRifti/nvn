@@ -16,5 +16,5 @@ def getFilename_fromCd(cd):
 
 url = 'http://google.com/'
 r = requests.get(url, allow_redirects=True)
-open("hello.png", 'wb').write(r.content)
+open("hello.txt", 'wb').write(r.content)
 print(r.content)
